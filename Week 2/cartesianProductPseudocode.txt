@@ -1,0 +1,20 @@
+CARTESIAN_PRODUCT(SET_LIST)
+	list result_list
+
+	FOR i <- 1 to LENGTH(SET_LIST[1])
+		FOR j <- 1 to LENGTH(SET_LIST[2])
+			result_list.append([SET_LIST[1][i],SET_LIST[2][j]])
+
+	FOR k <- 1 to LENGTH(SET_LIST)-2
+		list current_list
+
+		FOR i <- 1 to LENGTH(result_list)
+			FOR j <- 1 to LENGTH(SET_LIST[k+2])
+				temp_list <- COPY(result_list[i])
+				temp_list.append(SET_LIST[k+2][j])
+				current_list.append(temp_list)
+
+		result_list <- current_list
+
+	RETURN result_list
+				 

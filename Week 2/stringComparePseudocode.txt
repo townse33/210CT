@@ -1,0 +1,41 @@
+STRING_APPEND(A,B)
+	string S
+	FOR i = 1 to LENGTH(A)
+		S[i] <- A[i]
+	FOR j = 1 to LENGTH(B)
+		S[i+j] <- B[j]
+	RETURN S
+
+Time Complexity: O(n)
+
+STRING_MERGE(A,B)
+	string S
+	int x <- 1
+	FOR i = 1 to LENGTH(A)
+		FOR k = 1 to LENGTH(S)
+			IF S[k] = A[i]
+				S[x] <- A[i]
+				x++
+	FOR j = 1 to LENGTH(B)
+		FOR k = 1 to LENGTH(S)
+			IF S[k] = B[j]
+				S[x] <- B[j]
+				x++
+	RETURN S
+
+Time Complexity: O(n^2)
+
+STRING_DIFFERENCE (A,B)
+	string S
+	int x <- 1
+	FOR i = 1 to LENGTH(A)
+		bool t <- false
+		FOR j = 1 to LENGTH(B)
+			IF A[i] = B[j]
+				t <- true
+				BREAK
+		IF !t
+			S[x] <- A[i]
+			x++
+
+Time Complexity: O(n^2)
