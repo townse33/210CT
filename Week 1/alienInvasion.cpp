@@ -29,7 +29,5 @@ int main() {
 
 	cout << "Total aliens: " << alienInvasion(3, 5) << endl; //Sample data provided by question
 
-	system("pause");
-
 	return 0; //0 indicates normal termination of the program
 }
