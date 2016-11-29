@@ -34,6 +34,7 @@ def cubeTower(A):
         
     return B
 
+#Example method, outputs [(3,B),(2,R),(2,G),(2,R),(1,B)], taking into account optimisation with same-sized cubes
 
 cubes = [(1,"B"),(2,"R"),(2,"R"),(2,"G"),(3,"B")]
 
