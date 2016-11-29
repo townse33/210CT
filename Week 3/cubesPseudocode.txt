@@ -1,0 +1,29 @@
+CUBE_TOWER(A)
+
+    SORT(A,desc)
+    list B
+    B.append(A[1]) 
+  
+    FOR k <- 1 to LENGTH(A)
+        
+        IF A[k] = A[k+1]
+            IF k = LENGTH(A)-1:
+                BREAK
+            
+            maxK = LENGTH(A)-k 
+            
+            FOR k2 <- 2 to maxK
+                
+                IF A[k+k2][1] != A[k][1]
+                    BREAK
+                
+                IF A[k][2] != A[k+k2][2]
+                    temp <- A[k+1]
+                    A[k+1] <- A[k+k2]
+                    A[k+k2] <- temp
+                    BREAK
+            
+        IF A[k][2] != A[k+1][2] AND A[k][1] >= A[k+1][1]
+            B.append(A[k+1])
+        
+    RETURN B
