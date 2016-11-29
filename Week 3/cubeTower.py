@@ -29,7 +29,7 @@ def cubeTower(A):
                     A[k+k2] = temp
                     break
             
-        if A[k][1] != A[k+1][1] and A[k][0] >= A[k+1][0]:
+        if A[k][1] != A[k+1][1]:
             B.append(A[k+1]) #If conditions are satisfied, the cube can be safely added to the list
         
     return B
