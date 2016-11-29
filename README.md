@@ -1,5 +1,5 @@
 # 210CT
-210CT Coursework
+210CT Advanced Coursework
 
 Week 1: Q1 Alien Invasion, Q2 Sparse Matrix
 
@@ -11,7 +11,7 @@ Week 4: Q7 Labyrinth, Q8 Quick Sort
 
 Week 5: Q9 Square Matrix Powers, Q10 Linked List Rotation
 
-Week 6: Q11 Word Binary Search tree
+Week 6: Q11 Word Binary Search Tree
 
 Week 7: Q12 Unweighted Graph, Q13 Node Connection
 
