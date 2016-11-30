@@ -28,7 +28,8 @@ def maze2graph(M):
     return adj
 
 def graphMazeSolver(G,start,current,shape,prev=[]):
-
+    """Function to solve the maze using a modified DFS"""
+    
     prev.append(current)
     #We can keep track of every path through the recursion and avoid backtracking by simply passing a 'prev' list
 
@@ -51,8 +52,7 @@ def graphMazeSolver(G,start,current,shape,prev=[]):
     return 
 
 def mazeSolver(M,start):
-    """Wrapper function to convert maze to a graph before beginning
-       the actual maze solving process"""
+    """Wrapper function to convert maze to a graph before beginning the actual maze solving process"""
 
     shape = (len(M),len(M[0]))
 
