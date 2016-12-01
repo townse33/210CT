@@ -9,7 +9,7 @@ Week 3: Q6 Cube Tower
 
 Week 4: Q7 Labyrinth, Q8 Quick Sort
 
-Week 5: Q9 Square Matrix Powers, Q10 Linked List Rotation
+Week 5: Q9 Square Matrix Powers, Q10 Circular Linked List
 
 Week 6: Q11 Word Binary Search Tree
 
