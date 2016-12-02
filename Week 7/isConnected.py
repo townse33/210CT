@@ -17,15 +17,15 @@ def isConnected(G):
         #adjacent vertices are removed from list to find remaining vertices
             
         if len(tempList) > 0:
-            return False
+            print("No")
+            return
             #if any vertices are remaining, the graph is not strongly connected
-        
-    return True
+    print("Yes")     
+    return
 
-#Example data, every node is connected to every other node; is strongly connected
+#Example data, every node is connected to every other node; is strongly connected, this outputs "Yes"
 adjList = {1:[2,3,4],2:[1,3,4],3:[1,2,4],4:[1,2,3]}
 
 G = graph(adjList)
 
-#Function outputs True
-print(isConnected(G))
+isConnected(G)
